@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/my-node-app/E-Commence/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+    <title>Products details</title>
+</head>
+<body>
+
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+           <a href="index.html"><img src="/my-node-app/E-Commence/images/logo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">home</a></li>
+                <li><a href="all product.html">product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    </div>
+         <!------------- details-------------->
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>quantity</th>
+                <th>subtotal</th>
+            </tr>
+
+            <tr>
+                <td>
+                <div class="cart-info">
+                    <img src="images/buy-1.jpg" >
+                    <div>
+                        <p>red printed t-shirt</p>
+                        <small>price: &#8377;450.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;450.00</td>
+            </tr>
+
+            <tr>
+                <td>
+                <div class="cart-info">
+                    <img src="images/buy-2.jpg" >
+                    <div>
+                        <p>black Shoes</p>
+                        <small>price: &#8377;450.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;450.00</td>
+            </tr>
+
+            <tr>
+                <td>
+                <div class="cart-info">
+                    <img src="images/buy-3.jpg" >
+                    <div>
+                        <p>pants</p>
+                        <small>price: &#8377;450.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;450.00</td>
+            </tr>
+
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>&#8377;1350.00</td>
+                </tr>
+                <tr>
+                    <td>tax</td>
+                    <td>&#8377;50.00</td>
+                </tr>
+                <tr>
+                    <td>total</td>
+                    <td>&#8377;1400.00</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+
+
+        
+
+        <!-----------------footer-------------------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>download our app</h3>
+            <p>download app for android and ios mobile phone</p>
+            <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/logo-white.png">
+            <p>our purpose is to sustainably make the pleasure and <br>benefits of sports accessible to the many</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>useful links</h3>
+            <ul>
+                <li>Coupons</li>
+                <li>Blog post</li>
+                <li>return policy</li>
+                <li>join affiliate</li>
+            </ul>
+        </div>
+        <div class="footer-col-3">
+            <h3>follow us</h3>
+            <ul>
+                <li>facebool</li>
+                <li>instagram</li>
+                <li>twitter</li>
+                <li>youTube</li>
+            </ul>
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">copyright 2023 - vaidheeswarancr@gmail.com </p>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById('MenuItems');
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight = "0px"){
+            MenuItems.style.maxHeight = "200px"
+          }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }  
+     }
+</script>
+
+</body>
+</html>
